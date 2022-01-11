@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Amado</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<button class="scroll-up fas fa-chevron-up" data-scroll-up>
+			</button>
+
+			<div class="mobile-nav">
+				<div class="mobile-nav__body">
+					<a href="#" class="mobile-nav__link">
+						<picture>
+							<source srcset="img/sidebar/logo.webp" type="image/webp"><img src="img/sidebar/logo.png" alt="logo">
+						</picture>
+					</a>
+					<button class="mobile-nav__icon icon-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</div>
+
+			<div class="page__search search-page">
+				<button class="search-page__close" data-close-search></button>
+				<div class="search-page__body">
+					<form class="search-page__form">
+						<button type="submit" class="search-page__btn">
+							<picture>
+								<source srcset="img/sidebar/search.webp" type="image/webp"><img src="img/sidebar/search.png" alt="search">
+							</picture>
+						</button>
+						<input type="text" class="search-page__input" placeholder="Type your keyword...">
+					</form>
+				</div>
+			</div>
+
+			<div class="page__maincontent maincontent">
+				<header class="maincontent__sidebar sidebar">
+					<button class="sidebar__close-btn" data-close-icon-menu>
+					</button>
+					<div class="sidebar__inner">
+						<div class="sidebar__content content-sidebar">
+							<div class="content-sidebar__logo">
+								<a href="#">
+									<picture>
+										<source srcset="img/sidebar/logo.webp" type="image/webp"><img src="img/sidebar/logo.png" alt="logotype">
+									</picture>
+								</a>
+							</div>
+							<nav class="content-sidebar__nav">
+								<ul class="content-sidebar__list">
+									<li class="content-sidebar__item">
+										<a href="index.html" class="content-sidebar__link">HOME</a>
+									</li>
+									<li class="content-sidebar__item active">
+										<a href="#" class="content-sidebar__link active">SHOP</a>
+									</li>
+									<li class="content-sidebar__item">
+										<a href="product.html" class="content-sidebar__link">PRODUCT</a>
+									</li>
+									<li class="content-sidebar__item">
+										<a href="cart.html" class="content-sidebar__link">CART</a>
+									</li>
+									<li class="content-sidebar__item">
+										<a href="checkout.html" class="content-sidebar__link">CHECKOUT</a>
+									</li>
+								</ul>
+							</nav>
+							<div class="content-sidebar__buttons">
+								<a href="#" class="content-sidebar__button-disont">%Discount%</a>
+								<a href="#" class="content-sidebar__button-next">Next this week</a>
+							</div>
+							<div class="content-sidebar__actions actions-sidebar">
+								<div class="actions-sidebar__cart">
+									<a href="cart.html">CART
+										(<span id="cart-goods">0</span>)
+									</a>
+								</div>
+								<div class="actions-sidebar__fav">
+									<a href="#no_scroll">FAVORITE</a>
+								</div>
+								<div class="actions-sidebar__search">
+									<a href="#" data-search-link>SEARCH</a>
+								</div>
+							</div>
+							<ul class="content-sidebar__socials socials-sidebar">
+								<li><a href="#no_scroll" class="socials-sidebar__link socials-sidebar__link-pint fab fa-pinterest"></a></li>
+								<li><a href="#no_scroll" class="socials-sidebar__link socials-sidebar__link-inst fab fa-instagram"></a></li>
+								<li><a href="#no_scroll" class="socials-sidebar__link socials-sidebar__link-fb fab fa-facebook"></a></li>
+								<li><a href="#no_scroll" class="socials-sidebar__link socials-sidebar__link-tw fab fa-twitter"></a></li>
+							</ul>
+						</div>
+					</div>
+				</header>
+
+				<div class="maincontent__shop shop">
+					<div class="shop__row">
+						<div class="shop__filter filter-shop">
+							<div class="filter-shop__body">
+								<div class="filter-shop__categories categories-filter-shop">
+									<h6 class="categories-filter-shop__title filter-title">Categories</h6>
+									<ul class="categories-filter-shop__list">
+										<li class="categories-filter-shop__item">
+											<a href="#no_scroll" class="categories-filter-shop__link filter-link">Chairs</a>
+										</li>
+										<li class="categories-filter-shop__item">
+											<a href="#no_scroll" class="categories-filter-shop__link filter-link">Beds</a>
+										</li>
+										<li class="categories-filter-shop__item">
+											<a href="#no_scroll" class="categories-filter-shop__link filter-link">Accessories</a>
+										</li>
+										<li class="categories-filter-shop__item">
+											<a href="#no_scroll" class="categories-filter-shop__link filter-link">Furniture</a>
+										</li>
+										<li class="categories-filter-shop__item">
+											<a href="#no_scroll" class="categories-filter-shop__link filter-link">Home Deco</a>
+										</li>
+										<li class="categories-filter-shop__item">
+											<a href="#no_scroll" class="categories-filter-shop__link filter-link">Dressings</a>
+										</li>
+										<li class="categories-filter-shop__item">
+											<a href="#no_scroll" class="categories-filter-shop__link filter-link">Tables</a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="filter-shop__brands brands-filter-shop">
+									<h6 class="brands-filter-shop__title filter-title">Brands</h6>
+									<div class="brands-filter-shop__desc desc-brands-filter">
+										<div class="desc-brands-filter__wrapper">
+											<input type="checkbox" id="brands-amado" class="desc-brands-filter__input">
+											<label for="brands-amado" class="filter-link">Amado</label>
+										</div>
+										<div class="desc-brands-filter__wrapper">
+											<input type="checkbox" id="brands-ikea" class="desc-brands-filter__input">
+											<label for="brands-ikea" class="filter-link">Ikea</label>
+										</div>
+										<div class="desc-brands-filter__wrapper">
+											<input type="checkbox" id="brands-furniture" class="desc-brands-filter__input">
+											<label for="brands-furniture" class="filter-link">Furniture Inc</label>
+										</div>
+										<div class="desc-brands-filter__wrapper">
+											<input type="checkbox" id="brands-factory" class="desc-brands-filter__input">
+											<label for="brands-factory" class="filter-link">The Factory</label>
+										</div>
+										<div class="desc-brands-filter__wrapper">
+											<input type="checkbox" id="brands-artdeco" class="desc-brands-filter__input">
+											<label for="brands-artdeco" class="filter-link">Artdeco</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="filter-shop__colors colors-filter-shop">
+									<h6 class="colors-filter-shop__title filter-title">Colors</h6>
+									<ul class="colors-filter-shop__list">
+										<div class="colors-filter-shop__list-top">
+											<li class="colors-filter-shop__item">
+												<a href="#" class="colors-filter-shop__link colors-filter-shop__link_white"></a>
+											</li>
+											<li class="colors-filter-shop__item">
+												<a href="#" class="colors-filter-shop__link colors-filter-shop__link_gray"></a>
+											</li>
+											<li class="colors-filter-shop__item">
+												<a href="#" class="colors-filter-shop__link colors-filter-shop__link_black"></a>
+											</li>
+											<li class="colors-filter-shop__item">
+												<a href="#" class="colors-filter-shop__link colors-filter-shop__link_blue"></a>
+											</li>
+										</div>
+										<div class="colors-filter-shop__list-bottom">
+											<li class="colors-filter-shop__item">
+												<a href="#" class="colors-filter-shop__link colors-filter-shop__link_red"></a>
+											</li>
+											<li class="colors-filter-shop__item">
+												<a href="#" class="colors-filter-shop__link colors-filter-shop__link_yellow"></a>
+											</li>
+											<li class="colors-filter-shop__item">
+												<a href="#" class="colors-filter-shop__link colors-filter-shop__link_orange"></a>
+											</li>
+											<li class="colors-filter-shop__item">
+												<a href="#" class="colors-filter-shop__link colors-filter-shop__link_brown"></a>
+											</li>
+										</div>
+									</ul>
+								</div>
+
+								<div class="filter-shop__price price-filter-shop">
+									<h6 class="price-filter-shop__title filter-title">Price</h6>
+									<div class="price-filter-shop__desc">
+										<div class="range-slider">
+											<div class="range-slider__line" data-slider="line"></div>
+											<div class="range-slider__slick range-slider__slick_l" data-slider="left"></div>
+											<div class="range-slider__slick range-slider__slick_r" data-slider="right"></div>
+											<div class="range-slider__rail" data-slider-rail>
+											</div>
+										</div>
+										<div class="range-slider-price">
+											$<span id="range-price-min" data-value="0">0</span>-
+											$<span id="range-price-max" data-value="1000">1000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="shop__cards cards-shop">
+							<div class="cards-shop__body">
+								<div class="cards-shop__header header-cards-shop">
+									<div class="header-cards-shop__title">
+										Showing <span>1</span>- <span>8</span> of <span>25</span>
+									</div>
+									<div class="header-cards-shop__body">
+										<div class="header-cards-shop__badges badges-header-shop">
+											<a href="#" class="badges-header-shop__elem badges-header-shop__elem_left active" data-shop-badges>
+												<i class="fa fa-th-large"></i>
+											</a>
+											<a href="#" class="badges-header-shop__elem badges-header-shop__elem_right">
+												<i class="fa fa-bars"></i>
+											</a>
+										</div>
+										<div class="header-cards-shop__sort sort-header-shop">
+											<div class="sort-header-shop__date sort-header-shop-date">
+												<p class="sort-header-shop-date__title">Sort by</p>
+												<form action="#" class="sort-header-shop-date__form">
+													<select class="sort-header-shop-date__select" data-select-shop>
+														<option value="1">Date</option>
+														<option value="2">Newest</option>
+														<option value="3">Popular</option>
+													</select>
+												</form>
+											</div>
+											<div class="sort-header-shop__view sort-header-shop-view">
+												<p class="sort-header-shop-view__title">View</p>
+												<form action="#" class="sort-header-shop-view__form">
+													<select class="sort-header-shop-view__select" data-select-shop>
+														<option value="1">12</option>
+														<option value="2">24</option>
+														<option value="3">48</option>
+														<option value="4">96</option>
+													</select>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="cards-shop__row">
+									<div class="cards-shop__column">
+										<div class="cards-shop__item item-cards-shop">
+											<div class="item-cards-shop__image">
+												<picture>
+													<source srcset="img/shop/product1.webp" type="image/webp"><img src="img/shop/product1.jpg" alt="chair">
+												</picture>
+												<picture>
+													<source srcset="img/shop/product2.webp" type="image/webp"><img class="hover-img" src="img/shop/product2.jpg" alt="chair">
+												</picture>
+											</div>
+											<div class="item-cards-shop__content">
+												<div class="item-cards-shop__info">
+													<div class="item-cards-shop__price">$180</div>
+													<a href="#" class="item-cards-shop__name">Modern Chair</a>
+												</div>
+												<div class="item-cards-shop__rating">
+													<div class="item-cards-shop__rating-elems">
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+													</div>
+													<a href="cart.html" class="item-cards-shop__add-cart">
+														<picture>
+															<source srcset="img/shop/cart.webp" type="image/webp"><img src="img/shop/cart.png" alt="cart">
+														</picture>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="cards-shop__column">
+										<div class="cards-shop__item item-cards-shop">
+											<div class="item-cards-shop__image">
+												<picture>
+													<source srcset="img/shop/product2.webp" type="image/webp"><img src="img/shop/product2.jpg" alt="chair">
+												</picture>
+												<picture>
+													<source srcset="img/shop/product3.webp" type="image/webp"><img class="hover-img" src="img/shop/product3.jpg" alt="chair">
+												</picture>
+											</div>
+											<div class="item-cards-shop__content">
+												<div class="item-cards-shop__info">
+													<div class="item-cards-shop__price">$180</div>
+													<a href="#" class="item-cards-shop__name">Modern Chair</a>
+												</div>
+												<div class="item-cards-shop__rating">
+													<div class="item-cards-shop__rating-elems">
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+													</div>
+													<a href="cart.html" class="item-cards-shop__add-cart">
+														<picture>
+															<source srcset="img/shop/cart.webp" type="image/webp"><img src="img/shop/cart.png" alt="cart">
+														</picture>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="cards-shop__column">
+										<div class="cards-shop__item item-cards-shop">
+											<div class="item-cards-shop__image">
+												<picture>
+													<source srcset="img/shop/product3.webp" type="image/webp"><img src="img/shop/product3.jpg" alt="chair">
+												</picture>
+												<picture>
+													<source srcset="img/shop/product4.webp" type="image/webp"><img class="hover-img" src="img/shop/product4.jpg" alt="chair">
+												</picture>
+											</div>
+											<div class="item-cards-shop__content">
+												<div class="item-cards-shop__info">
+													<div class="item-cards-shop__price">$180</div>
+													<a href="#" class="item-cards-shop__name">Modern Chair</a>
+												</div>
+												<div class="item-cards-shop__rating">
+													<div class="item-cards-shop__rating-elems">
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+													</div>
+													<a href="cart.html" class="item-cards-shop__add-cart">
+														<picture>
+															<source srcset="img/shop/cart.webp" type="image/webp"><img src="img/shop/cart.png" alt="cart">
+														</picture>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="cards-shop__column">
+										<div class="cards-shop__item item-cards-shop">
+											<div class="item-cards-shop__image">
+												<picture>
+													<source srcset="img/shop/product4.webp" type="image/webp"><img src="img/shop/product4.jpg" alt="chair">
+												</picture>
+												<picture>
+													<source srcset="img/shop/product5.webp" type="image/webp"><img class="hover-img" src="img/shop/product5.jpg" alt="chair">
+												</picture>
+											</div>
+											<div class="item-cards-shop__content">
+												<div class="item-cards-shop__info">
+													<div class="item-cards-shop__price">$180</div>
+													<a href="#" class="item-cards-shop__name">Modern Chair</a>
+												</div>
+												<div class="item-cards-shop__rating">
+													<div class="item-cards-shop__rating-elems">
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+													</div>
+													<a href="cart.html" class="item-cards-shop__add-cart">
+														<picture>
+															<source srcset="img/shop/cart.webp" type="image/webp"><img src="img/shop/cart.png" alt="cart">
+														</picture>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="cards-shop__column">
+										<div class="cards-shop__item item-cards-shop">
+											<div class="item-cards-shop__image">
+												<picture>
+													<source srcset="img/shop/product5.webp" type="image/webp"><img src="img/shop/product5.jpg" alt="chair">
+												</picture>
+												<picture>
+													<source srcset="img/shop/product6.webp" type="image/webp"><img class="hover-img" src="img/shop/product6.jpg" alt="chair">
+												</picture>
+											</div>
+											<div class="item-cards-shop__content">
+												<div class="item-cards-shop__info">
+													<div class="item-cards-shop__price">$180</div>
+													<a href="#" class="item-cards-shop__name">Modern Chair</a>
+												</div>
+												<div class="item-cards-shop__rating">
+													<div class="item-cards-shop__rating-elems">
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+													</div>
+													<a href="cart.html" class="item-cards-shop__add-cart">
+														<picture>
+															<source srcset="img/shop/cart.webp" type="image/webp"><img src="img/shop/cart.png" alt="cart">
+														</picture>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="cards-shop__column">
+										<div class="cards-shop__item item-cards-shop">
+											<div class="item-cards-shop__image">
+												<picture>
+													<source srcset="img/shop/product6.webp" type="image/webp"><img src="img/shop/product6.jpg" alt="chair">
+												</picture>
+												<picture>
+													<source srcset="img/shop/product1.webp" type="image/webp"><img class="hover-img" src="img/shop/product1.jpg" alt="chair">
+												</picture>
+											</div>
+											<div class="item-cards-shop__content">
+												<div class="item-cards-shop__info">
+													<div class="item-cards-shop__price">$180</div>
+													<a href="#" class="item-cards-shop__name">Modern Chair</a>
+												</div>
+												<div class="item-cards-shop__rating">
+													<div class="item-cards-shop__rating-elems">
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+														<span class="fa fa-star"></span>
+													</div>
+													<a href="cart.html" class="item-cards-shop__add-cart">
+														<picture>
+															<source srcset="img/shop/cart.webp" type="image/webp"><img src="img/shop/cart.png" alt="cart">
+														</picture>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="cards-shop__pages pages-cards-shop">
+									<nav class="pages-cards-shop__nav">
+										<ul class="pages-cards-shop__list">
+											<li class="pages-cards-shop__item">
+												<a href="#no_scroll" class="pages-cards-shop__link active">01.</a>
+											</li>
+											<li class="pages-cards-shop__item">
+												<a href="#no_scroll" class="pages-cards-shop__link">02.</a>
+											</li>
+											<li class="pages-cards-shop__item">
+												<a href="#no_scroll" class="pages-cards-shop__link">03.</a>
+											</li>
+											<li class="pages-cards-shop__item">
+												<a href="#no_scroll" class="pages-cards-shop__link">04.</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="page__form form">
+				<div class="form__container container">
+					<form class="form__body" action="#">
+						<div class="form__content">
+							<h2 class="form__title">Subscribe for a <span>25% Discount</span> </h2>
+							<p class="form__text">Nulla ac convallis lorem, eget euismod nisl. Donec in libero sit amet mi vulputate consectetur. Donec auctor interdum purus, ac finibus massa bibendum nec.</p>
+						</div>
+						<div class="form__fill">
+							<input type="text" class="form__input" placeholder="Your E-mail">
+							<button class="form__btn" type="submit">Subscribe</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__body">
+					<a href="#" class="footer__logo">
+						<picture>
+							<source srcset="img/footer/logo2.webp" type="image/webp"><img src="img/footer/logo2.png" alt="logo">
+						</picture>
+					</a>
+					<div class="footer__content">
+						<button class="footer__menu-btn fa fa-bars" data-footer-menu></button>
+						<div class="footer__nav">
+							<ul class="footer__list">
+								<li class="footer__item"><a href="index.html" class="footer__link">home</a></li>
+								<li class="footer__item"><a href="#" class="footer__link active">SHOP</a></li>
+								<li class="footer__item"><a href="product.html" class="footer__link">product</a></li>
+								<li class="footer__item"><a href="cart.html" class="footer__link">cart</a></li>
+								<li class="footer__item"><a href="checkout.html" class="footer__link">checkout</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+
+	<script src="js/script.min.js"></script>
+</body>
+
+</html>
