@@ -1,0 +1,394 @@
+.header {
+
+
+		@media(max-width: 1100px){
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 100;
+		}
+
+		
+
+		// .header__body
+
+		&__body {
+		}
+
+		// .header__floor
+
+		&__floor {
+		}
+
+		// .header__floor-up
+
+		&__floor-up {
+			background-color: #fff;
+			
+		}
+
+		&__container-up{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			height: 120px;
+			@media(max-width: 768px){
+				height: 73px;
+			}
+		}
+
+		// .header__logo
+
+		&__logo {
+			margin: 0px 10px 0px 0px;
+			@media(max-width: 768px){
+				flex: 1 1 auto;
+				img{
+					max-width: 100px;
+				}
+			}
+		}
+
+		// .header__search
+
+		&__search {
+		}
+
+		// .header__phone
+
+		&__phone {
+			flex: 0 0 168px;
+			display: block;
+			padding: 0px 5px;
+			font-weight: 600;
+			font-size: 1.8rem;
+			line-height: 1.2;
+			letter-spacing: 0.01em;
+			color: $mainColor;
+
+			&-up{
+				@media(max-width: 1100px){
+					display: none;
+				}
+			}
+
+			&-down{
+				margin: 0px 25px 0px 0px;
+				@media(min-width: 1100px){
+					display: none;
+				}
+				@media(max-width: 768px){
+					margin: 0px 15px 0px 0px;
+					flex: 0 1 auto;
+					font-size: 1.2rem;
+				}
+			}
+		}
+
+		// .header__socials
+
+		&__socials {
+		}
+
+		// .header__cart
+
+		&__cart {
+		}
+
+		// .header__login
+
+		&__login {
+		}
+
+		// .header__floor-down
+
+		&__floor-down {
+			background-color: rgba(242, 251, 249,1);
+			position: relative;
+		}
+
+		&__container-down{
+			display: flex;
+			align-items: center;
+			height: 60px;
+			@media(max-width: 768px){
+				height: 50px;
+			}
+		}
+
+		&__fakesearch{
+			display: none;
+			margin: 0px 20px 0px 0px;
+			@media(max-width: 768px){
+				flex: 0 1 auto;
+				display: block;
+			}
+		}
+
+		// .header__nav
+
+		&__nav {
+			flex: 1 1 auto;
+		}
+
+		// .header__checkout
+
+		&__checkout {
+			@media(max-width: 768px){
+				font-size: 1.3rem;
+			}
+		}
+
+		&__menu{
+			flex: 1 1 auto;
+			background: none;
+			
+			&-btn{
+					background: none;
+				
+				&.active{
+
+					.header__menu-btn-open{
+						display: none;
+					}
+
+					.header__menu-btn-cancel{
+						display: block;
+					}
+					
+				}
+
+				&-open{
+					display: block;
+				}
+				&-cancel{
+					display: none;
+				}
+			}
+
+			@media(min-width: 1100.99px){
+				display: none;
+			}
+		}
+}
+
+.search-header {
+	flex: 0 1 auto;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	box-sizing: border-box;
+	border-radius: 5px;
+	height: 44px;
+	max-width: 262px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	
+	@media(max-width: 768px){
+		position: absolute;
+		top: -100%;
+		left: 0;
+		max-width: 100%;
+		width: 120%;
+		z-index: 102;
+		box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.1);
+		transition: all 0.3s ease 0s;
+		&.active{
+			top: 73px;
+			
+		}
+	}
+		// .search-header__input
+
+		&__input {
+			padding: 12px 20px;
+			flex: 1 1 auto;
+			max-width: 100%;
+			width: 100%;
+			height: 100%;
+		}
+
+		// .search-header__submit
+
+		&__submit {
+			background: none;
+			flex: 0 0 18px;
+			padding: 0px 15px;
+			height: 100%;
+		}
+}
+.socials-header {
+		margin: 0px 5px;
+		@media(max-width: 1100px){
+			display: none;
+		}
+		// .socials-header__list
+
+		&__list {
+		}
+
+		// .socials-header__item
+
+		&__item {
+			&:not(:last-child){
+				margin: 0px 10px 0px 0px;
+			}
+
+		}
+
+		// .socials-header__link
+
+		&__link {
+		}
+}
+
+.cart-header {
+		flex: 0 0 195px;
+		display: flex;
+		align-items: center;
+		margin: 0px 8px;
+		position: relative;
+		@media(max-width:1100px){
+			justify-content: center;
+		}
+		@media(max-width: 768px){
+			margin: 0px 20px 0px 0px;
+			flex: 0 1 auto;
+			justify-content: flex-start;
+		}
+		&__icon{
+			margin: 0px 10px 0px 0px;
+		}
+		&__name{
+			margin: 0px 10px 0px 0px;
+			color: $mainColor;
+			font-size: 1.4rem;
+			display: block;
+			@media(max-width: 1100px){
+				display: none;
+			}
+		}
+		&__quantity{
+			margin: 0px 10px 0px 0px;
+			display: block;
+			flex: 0 0 30px;
+			height: 30px;
+			background-color: $greenColor;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 1.4rem;
+			color: $whiteColor;
+			margin: 0px 10px 0px 0px;
+			@media(max-width: 768px){
+				background-color: #FFA524;
+				width: 18px;
+				height: 18px;
+				font-size: 0.8rem;
+				position: absolute;
+				top: -40%;
+				left: 10px;
+			}
+		}
+		&__price{
+			font-size: 14px;
+			line-height: 17px;
+			font-weight: 700;
+			letter-spacing: 0.01em;
+			color: $mainColor;
+			white-space: nowrap;
+			display: block;
+			@media(max-width: 768px){
+				display: none;
+			}
+		}
+}
+.login-header {
+		display: flex;
+		align-items: center;
+		// .login-header__icon
+
+		&__icon {
+			margin: 0px 10px 0px 0px;
+			
+		}
+
+		// .login-header__name
+
+		&__name {
+			color: $mainColor;
+			font-size: 1.4rem;
+			@media(max-width: 768px){
+				display: none;
+			}
+		}
+}
+.nav-header {
+		margin: 0px 35px 0px 0px;
+		
+		@media(max-width: 1100px){
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			&.active{
+				.nav-header__list{
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+		// .nav-header__list
+
+		&__list {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			@media(max-width: 1100px){
+				background-color: #fff;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				flex-direction: column;
+				align-items: flex-start;
+				padding: 0px 24px;
+				opacity: 0;
+				visibility: hidden;
+				transition: all 0.2s ease 0s;
+				// transition: opacity 0.2s ease 0s, background-color 0.2s ease 0s;
+			}
+		}
+
+		// .nav-header__item
+
+		&__item {
+			
+			@media(max-width: 1100px){
+				padding: 20px 0px;
+				width: 100%;
+				&+&{
+					border-top: 1px solid rgba(0, 0, 0, 0.1);
+				}
+			}
+		}
+
+		// .nav-header__link
+
+		&__link {
+			font-size: 1.2rem;
+			line-height: 1.07;
+			font-weight: 500;
+			text-transform: uppercase;
+			color: $mainColor;
+			transition: all 0.2s ease-in-out;
+			&:hover{
+				color: #9ADED2;
+			}
+		}
+}
+
+
+
