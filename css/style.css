@@ -1,0 +1,445 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  min-width: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gallery {
+  height: 100%;
+}
+
+.gallery__list {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+}
+
+.gallery__item {
+  overflow: hidden;
+}
+
+.gallery__item a {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+
+.gallery__item a:hover .gallery__item-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.gallery__item a:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.gallery__item a img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ecdada;
+  min-width: 1000px;
+  min-height: 600px;
+  z-index: 999;
+}
+
+.modal.open {
+  display: block;
+}
+
+.modal__img {
+  position: absolute;
+  width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 2;
+  height: auto;
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+          transform: translate3d(0, 0, 0) scale(1);
+  border-radius: 5px;
+}
+
+.controls-modal {
+  position: fixed;
+  right: 15%;
+  top: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translate(0, -40%);
+      -ms-transform: translate(0, -40%);
+          transform: translate(0, -40%);
+  display: none;
+  opacity: 0;
+  z-index: 101;
+}
+
+.controls-modal.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.controls-modal__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.controls-modal__close {
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/contorls/close.svg");
+  background-position: 46%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0px 0px 30px 0px;
+}
+
+.controls-modal__counter {
+  padding: 10px 0px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.controls-modal__btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  background-color: transparent;
+}
+
+.controls-modal__btn-prev {
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.controls-modal__btn-prev::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background-color: #000;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.controls-modal__btn-prev::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background-color: #000;
+  top: 50%;
+  left: 60%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.controls-modal__btn-prev:hover {
+  background-color: #000;
+}
+
+.controls-modal__btn-prev:hover::before {
+  background-color: #fff;
+}
+
+.controls-modal__btn-prev:hover::after {
+  background-color: #fff;
+}
+
+.controls-modal__btn-next {
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.controls-modal__btn-next::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background-color: #000;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.controls-modal__btn-next::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background-color: #000;
+  top: 50%;
+  left: 60%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.controls-modal__btn-next:hover {
+  background-color: #000;
+}
+
+.controls-modal__btn-next:hover::before {
+  background-color: #fff;
+}
+
+.controls-modal__btn-next:hover::after {
+  background-color: #fff;
+}
+
+@media (max-width: 1600px) {
+  .gallery__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .controls-modal {
+    right: 10%;
+  }
+}
+
+@media (max-width: 992px) {
+  .gallery__list {
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .controls-modal {
+    right: 5%;
+    width: 55px;
+  }
+}
+
+@media (max-width: 768px) {
+  .controls-modal {
+    right: 2%;
+  }
+}
+
+@media (max-width: 650px) {
+  .gallery__list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .controls-modal {
+    top: 81%;
+  }
+
+  .controls-modal__close {
+    margin: 0px 0px 10px 0px;
+  }
+}
+
+@media (max-width: 479px) {
+  .controls-modal__close {
+    width: 25px;
+    height: 25px;
+  }
+
+  .controls-modal__counter {
+    font-size: 20px;
+  }
+
+  .controls-modal__btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .controls-modal__btn-prev::before {
+    width: 13px;
+  }
+
+  .controls-modal__btn-prev::after {
+    width: 13px;
+  }
+
+  .controls-modal__btn-next::before {
+    width: 13px;
+  }
+
+  .controls-modal__btn-next::after {
+    width: 13px;
+  }
+}
