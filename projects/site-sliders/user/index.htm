@@ -1,0 +1,909 @@
+﻿    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Профиль - Aria - новый взгляд на страхование в Узбекистане</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="description" content="Профиль">
+<meta name="keywords" content="Профиль">
+<meta name="author" content="Создание и продвижение сайтов Life Style">
+<meta name="robots" content="">
+	<meta property="og:url" content="https://ariainsurance.uz">
+	<meta property="og:site_name" content="Aria - новый взгляд на страхование в Узбекистане">
+	<meta property="og:title" content="Профиль">
+	<meta property="og:description" content="Профиль">
+	<meta property="og:type" content="site">
+	<meta property="og:image" content="https://ariainsurance.uz/uploads/og-image.jpg">
+	<link rel="image_src" href="https://ariainsurance.uz/uploads/og-image.jpg">
+    <link rel="apple-touch-icon" sizes="57x57" href="../themes/aria-ru/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../themes/aria-ru/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../themes/aria-ru/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../themes/aria-ru/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../themes/aria-ru/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../themes/aria-ru/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../themes/aria-ru/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../themes/aria-ru/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../themes/aria-ru/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../themes/aria-ru/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../themes/aria-ru/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../themes/aria-ru/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../themes/aria-ru/favicon/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://ariainsurance.uz/themes/aria-ru/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="../themes/aria-ru/css/main.css">
+<link rel="stylesheet" href="../themes/aria-ru/css/additions.css">
+
+	  <script src='../recaptcha/api.js?render=6LfprAApAAAAAOktbIuNBINQQ9SSGm-1UgbuuJcV'></script>	<!-- Your code -->
+</head>
+<body>	<main class="main">
+		<div class="entrance">
+			<aside class="entrance__aside">
+
+				<div class="entrance__header">
+					<a class="logo entrance__logo" href="../index.htm">
+						<img class="logo__img" src="../themes/aria-ru/images/logo/logo_dark.svg" alt="Aria - новый взгляд на страхование в Узбекистане">
+					</a>
+
+					<h1 class="entrance__title">Вход в личный кабинет</h1>
+				</div>
+
+                				<div class="notification" style="margin-bottom: 20px"></div>
+
+                				<form id="authenticate" class="entrance__form" name="authenticate" action="" method="post">
+					<input id="action" type="hidden" name="action" value="authCheck">
+					<div class="input-wrap">
+						<input id="authenticatePhone" class="input input-phone" type="tel" name="user[phone]" placeholder="Номер телефона" data-error="phone">
+					</div>
+
+					<div class="input-append" style="width: 100%;"></div>
+
+					<div id="confirm-timer" style="margin-bottom: 10px;"></div>
+					
+					<button id="authenticate_button" class="btn-large entrance__form-btn" type="submit">Войти</button>
+
+					<div class="recovery" style="width: 100%;text-align: center;margin-top: 2.813rem;"></div>
+				</form>
+
+                
+			</aside>
+
+			<div class="entrance__img-wrap">
+				<img src="../themes/aria-ru/images/entrance/bg.png" alt="">
+			</div>
+		</div>
+	</main>
+    <div class="modal-cookie modal-cookie_js">
+	<div class="modal-cookie__info"><p>Мы используем файлы cookie, чтобы анализировать трафик, подбирать для вас подходящий контент и рекламу, а также дать вам возможность делиться информацией в социальных сетях. Продолжая пользоваться данным сайтом, вы подтверждаете свое согласие на использование файлов cookie в соответствии с <a href="../agreement/index.htm" target="_blank" rel="noopener">Пользовательским соглашением.</a></p></div>
+
+	<div class="modal-cookie__btns">
+		<button class="modal-cookie__btn modal-cookie-btn_js">Отклонить cookie</button>
+		<button class="modal-cookie__btn modal-cookie-btn_js">Принять cookie</button>
+	</div>
+</div>
+
+
+
+<script src="../themes/aria-ru/js/jquery.min.js"></script>
+<script src="../themes/aria-ru/js/jquery.cookie.min.js"></script>
+<script src="../themes/aria-ru/js/jquery-ui.js"></script>
+<script src="../themes/aria-ru/js/vendor.js"></script>
+<script src="../themes/aria-ru/js/validate.min.js"></script>
+<script type="module" src="../themes/aria-ru/js/main.js"></script>
+
+<script>
+    var SiteUser = function() {
+
+        const userUrl = "https://ariainsurance.uz/public/user.php";
+        const searchUrl = "https://ariainsurance.uz/public/search.php";
+        const feedbackUrl = "https://ariainsurance.uz/public/feedback.php";
+        const orderUrl = "https://ariainsurance.uz/public/shop.php";
+        const vacancyUrl = "https://ariainsurance.uz/public/vacancy.php";
+
+        var notification = $('.notification'), notificationCalc = $('.notification-calc'), i = 60,
+	        authenticateForm = $('#authenticate'),
+	        authenticateButton = $("#authenticate_button"), recoveryForm = $("#recovery"), recoveryButton = $("#recovery_button"),
+	        step1 = $('#step_1'), step2 = $('#step_2'), step3 = $('#step_3'), backStep1 = $('#back_step_1') ;
+
+
+        let recaptcha_token = null;
+
+        $( document ).ready(function() {
+            $('#checkbox_agree').click(function() {
+                $("#checkbox_agree").toggle(this.checked);
+                if($("#checkbox_agree").is(':checked')) {
+                    $(".agree").removeClass('agree_error');
+                }
+            });
+        });
+
+        function updateRecaptcha() {
+            grecaptcha.execute('6LfprAApAAAAAOktbIuNBINQQ9SSGm-1UgbuuJcV').then(function(token) {
+                document.querySelector('.recaptcha_token').value = token;
+            });
+        }
+                var _authenticateForm = function() {
+            authenticateButton.attr('disabled', true);
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LfprAApAAAAAOktbIuNBINQQ9SSGm-1UgbuuJcV').then(function (token) {
+                    // authenticateForm.prepend('<input class="recaptcha_token" type="hidden" name="recaptcha_token" value="' + token + '">');
+		            $("input#authenticatePhone").on('keyup', function() {
+		                var phoneNumber = $('#authenticatePhone').val();
+		                // console.log(phoneNumber.length);
+                        authenticateButton.text('Вводится номер')
+		                if (phoneNumber.length === 17) {
+		                    $.post(userUrl, { action: 'authCheck', "user[phone]" : phoneNumber, recaptcha_token: token }, function(response) {
+		                        console.log(response);
+		                        $('.input-append').html('');
+		                        // $.cookie('action', response.action);
+		                        // $('#action').val($.cookie('action'))
+		                        $('#action').val(response.action);
+		                        authenticateButton.text(response.button)
+                                authenticateButton.attr('disabled', false);
+                                // updateRecaptcha();
+		                        if (response.action === 'authPhone') {
+		                             $('.input-append').append('<div class="input-wrap"><input class="input" type="password" name="user[password]" id="password" placeholder="Введите пароль" data-error="password"></div>');
+		                            $('.recovery').html('<a href="https://ariainsurance.uz/recovery/">Восстановления пароля</a>');
+		                        } else if (response.action === 'confirmPhone') {
+		                             $('.input-append').append('<div class="input-wrap"><input class="input" type="text" name="user[code]" id="code" placeholder="Введите код подтверждения" data-error="code"></div>');
+		                            onTimer();
+		                        } else {
+
+		                             $('.input-append').append('<div class="input-wrap"><input class="input" type="password" name="user[password]" id="password" placeholder="Создайте пароль" data-error="password"></div>' +
+		                                 '<div class="input-wrap"><input class="input" type="password" name="user[confirmPassword]" id="confirmPassword" placeholder="Подтвердите пароль" data-error="confirmPassword"></div>');
+		                        }
+		                    });
+		                } else {
+		                    $.cookie('action', 'authCheck');
+		                    $('#action').val('authCheck');
+		                    $('.recovery').html('')
+		                }
+		            });
+                });
+            });
+        };
+
+        var _authenticate = function () {
+	        grecaptcha.ready(function() {
+		        grecaptcha.execute('6LfprAApAAAAAOktbIuNBINQQ9SSGm-1UgbuuJcV').then(function (token) {
+                    authenticateForm.prepend('<input class="recaptcha_token" type="hidden" name="recaptcha_token" value="' + token + '">');
+		            authenticateForm.validate({
+		                ignore: ':hidden',
+		                rules: {
+		                    "user[phone]": { required: true, minlength: 17, maxlength: 17 },
+		                    "user[password]": {
+		                        required: function() {
+			                        if ($('#action').val() === 'authCheck' || $('#action').val() === 'confirmPhone') {
+		                                return false;
+		                            } else if ($('#action').val() === 'authPhone' || $('#action').val() === 'registrationPhone') {
+		                                return true;
+		                            }
+		                        },
+		                        minlength: 3
+		                    },
+		                    "user[confirmPassword]": {
+		                        required: function() {
+		                            if ($('#action').val() === 'authCheck' || $('#action').val() === 'authPhone' || $('#action').val() === 'confirmPhone') {
+		                                return false;
+		                            } else if ($('#action').val() === 'registrationPhone') {
+		                                return true;
+		                            }
+		                        },
+		                        minlength: 3
+		                    },
+		                    "user[code]" : {
+		                        required: function() {
+		                            if ($('#action').val() === 'authCheck' || $('#action').val() === 'authPhone' || $('#action').val() === 'registrationPhone') {
+		                                return false;
+		                            } else if ($('#action').val() === 'confirmSms' || $('#action').val() === 'confirmPhone') {
+		                                return true;
+		                            }
+		                        },
+		                        minlength: 4,
+		                        maxlength: 4
+		                    }
+		                },
+		                messages: {
+		                    "user[phone]": { required: " Введите, пожалуйста номер телефона",  minlength: "Error min", maxlength: 'Error max'  },
+		                    "user[password]": { required: " Введите, пожалуйста пароль",  minlength: "Слишком коротко!" },
+		                    "user[confirmPassword]": { required: " Введите, пожалуйста пароль",  minlength: "Слишком коротко!" },
+		                    "user[code]" : { required: 'Error', minlength: "Error min", maxlength: 'Error max' }
+		                },
+		                submitHandler: function () {
+		                    authenticateButton.attr('disabled', true);
+		                    $.post(userUrl, authenticateForm.serialize(), function(response) {
+		                        console.log('response => ', response);
+                                updateRecaptcha();
+		                        if (response.status === 200) {
+		                            authenticateButton.attr('disabled', false);
+		                            if (response.auth === true) {
+		                                authenticateButton.attr('disabled', false).text(response.message);
+			                            setTimeout(function () {
+				                            window.location.reload();
+			                            }, 400);
+		                            }
+		                            if (response.sms === true) { // если требуется подтверждение
+		                                notification.fadeIn().html(response.message).css('color', response.color);
+		                                $.cookie('action', response.action);
+		                                $('#action').val($.cookie('action'))
+
+		                                onTimer();
+		                                authenticateButton.attr('disabled', false).text('Подтвердить');
+		                                setTimeout(function () {
+		                                    notification.text('');
+		                                }, 2500);
+		                            }
+		                            if (response.confirm === true) {
+			                            $('.input-append').append('<div class="input-wrap"><input class="input" type="text" name="user[code]" id="code" placeholder="Введите код подтверждения" data-error="code"></div>');
+
+		                            }
+		                        } else {
+		                            notification.fadeIn().html(response.message).css('color', response.color);
+		                            authenticateButton.attr('disabled', false);
+		                        }
+		                    });
+		                },
+		                errorPlacement: function(error, element) {
+		                    var placement = element.data('error');
+		                    if (placement) {
+		                        $(placement).append(error);
+		                        $(element).css('border-color', '#ec0000').css('color', '#ec0000');
+		                    } else {
+		                        error.insertAfter(element);
+		                    }
+		                },
+		                highlight: function (element) {
+		                    $(element).css('border-color', '#ec0000').css('color', '#ec0000');
+		                    $(element).addClass('error');
+		                },
+		                unhighlight: function (element) {
+		                    $(element).removeClass('error');
+		                    $(element).css('border-color', '#bac2ca').css('color', '#7e868e');
+		                }
+		            });
+		        });
+	        });
+        }
+
+                var _recoveryForm = function() {
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LfprAApAAAAAOktbIuNBINQQ9SSGm-1UgbuuJcV').then(function (token) {
+                    recoveryForm.prepend('<input class="recaptcha_token" type="hidden" name="recaptcha_token" value="' + token + '">');
+			        recoveryForm.validate({
+				        ignore: ':hidden',
+				        rules: {
+					        "user[phone]": { required: true, minlength: 17 },
+					        "user[code]" : { required: function(){ return $('#action').val() !== 'recoveryPhone'; }, minlength: 4 },
+					        "user[newPassword]" : { required: function(){ return $('#action').val() !== 'recoveryPhone'; }, minlength: 3 }
+				        },
+				        messages: {
+					        "user[phone]": { required: " Введите, пожалуйста номер телефона", minlength: "Слишком коротко!" },
+					        "user[code]" : { required: " Введите, пожалуйста код с смс",  minlength: "Слишком коротко!" },
+					        "user[newPassword]" : { required: " Введите, пожалуйста новый пароль",  minlength: "Слишком коротко!",}
+				        },
+				        submitHandler: function () {
+					        recoveryButton.attr('disabled', true);
+					        $.post(userUrl, recoveryForm.serialize(), function (response) {
+                                updateRecaptcha();
+						        if (response.status === 200) {
+							        if (response.sms === true) {
+		                                notification.fadeIn().text(response.message).css('color', response.color);
+								        $('#action').val(response.action)
+								        $('#new_password').fadeIn();
+								        $('#confirm_code').fadeIn();
+
+								        recoveryButton.attr('disabled', false).text(response.button);
+								        onTimer();
+								        setTimeout(function () {
+									        notification.text('');
+								        }, 2500);
+							        } else if (response.confirm) {
+								        setTimeout(function () {
+									        window.location.href = '/user/';
+								        }, 400);
+								        recoveryButton.attr('disabled', false).text(response.button);
+							        } else {
+		                                notification.fadeIn().text(response.message).css('color', response.color);
+								        recoveryButton.attr('disabled', false);
+							        }
+						        } else {
+		                            notification.fadeIn().text(response.message).css('color', response.color);
+							        recoveryButton.attr('disabled', false);
+						        }
+					        });
+				        },
+				        errorPlacement: function(error, element) {
+					        var placement = element.data('error');
+					        if (placement) {
+						        $(placement).append(error);
+						        $(element).css('border-color', '#ec0000').css('color', '#ec0000');
+					        } else {
+						        error.insertAfter(element);
+					        }
+				        },
+				        highlight: function (element) {
+					        $(element).css('border-color', '#ec0000').css('color', '#ec0000');
+					        $(element).addClass('error');
+				        },
+				        unhighlight: function (element) {
+					        $(element).removeClass('error');
+					        $(element).css('border-color', '#bac2ca').css('color', '#7e868e');
+				        }
+			        });
+                });
+            });
+        };
+
+                var onTimer =  function() {
+            var seconds = 60;
+            var countdownTimer = setInterval(function() {
+                seconds--;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                document.getElementById("confirm-timer").innerHTML = "00:" + seconds;
+
+                if (seconds <= 0) {
+                    clearInterval(countdownTimer);
+                    window.location.reload();
+                }
+            }, 1000);
+        }
+
+                var _logOutForm = function() {
+            $('#logout').click(function() {
+                $.post(userUrl, { action: "logout" }, function (response) {
+                    console.log(response);
+                    if (response.status === 200) {
+                        setTimeout(function () {
+                            window.location.href = "/";
+                        }, 200);
+                    }
+                });
+            });
+
+        };
+                var _searchForm = function () {
+
+            $("input#search_input").bind('input', function() {
+	            var query = $('#search_input').val();
+	            if (query.length > 1) {
+	                $.post(searchUrl, { action: 'search', query : query }, function(response) {
+	                    console.log(response);
+	                    $('ul#search_list').empty();
+	                    $.each(response, function( index, value ) {
+	                        console.log(value );
+	                        $('ul#search_list').append('<li style="padding: 2px 10px;"><a style="font-size: 12px;" href="' + value.url + '">' + value.name + '</a></li>');
+	                    });
+	                });
+                } else {
+	            	$('ul#search_list').replaceWith('<ul id="search_list" style="position: absolute; width: 100%;top: 50px;background: #fff;"></ul>');
+	            }
+            });
+        }
+                var _feedbackForm = function () {
+
+            var subscriptionForm = $('#subscription_form'),
+	            subscriptionFormButton = $('#subscription_form_button'),
+	            subscriptionNotification = $('.subscription_notification');
+
+            subscriptionForm.validate({
+                ignore: ':hidden',
+                rules: { "subscription[email]": { required: true, email: true } },
+                messages: { "subscription[email]": { required: " Введите, пожалуйста email", email: "Укажите, пожалуйста email" } },
+                submitHandler: function () {
+	                // subscriptionFormButton.attr('disabled', true);
+	                $.post(subscriptionForm.attr('action'), subscriptionForm.serialize(), function (response) {
+		                console.log(response)
+                        subscriptionForm.append('<div class="subscription_notification">'+ response.message +'</div>');
+                        setTimeout(function () {
+                            $('#subscription_form .subscription_notification').remove();
+                        }, 2500);
+
+	                });
+                },
+                errorPlacement: function(error, element) {
+                    var placement = element.data('error');
+
+                    if (placement) {
+                        $(placement).append(error);
+                        $(element).css('border-color', '#ec0000').css('color', '#ec0000');
+                    } else {
+                        error.insertAfter(element);
+                    }
+                },
+                highlight: function (element) {
+                    $(element).css('border-color', '#ec0000').css('color', '#ec0000');
+                    $(element).addClass('error');
+                },
+                unhighlight: function (element) {
+                    $(element).removeClass('error');
+                    $(element).css('border-color', '#bac2ca').css('color', '#7e868e');
+                }
+            });
+
+
+
+            var mainForm = $('#main_form'), mainFormButton = $('#main_form_button');
+            mainForm.validate({
+                ignore: ':hidden',
+                rules: {
+                    "feedback[firstName]": { required: true },
+                    "feedback[lastName]" : { required: true },
+                    "feedback[phone]" : { required: true },
+                    "feedback[message]" : { required: true },
+                    // "feedback[personal]" : { required: true }
+                },
+                messages: {
+                    "feedback[firstName]": { required: " Введите, пожалуйста имя и фамилию" },
+                    "feedback[lastName]" : { required: " Введите, пожалуйста имя и фамилию" },
+                    "feedback[phone]" : { required: " Введите, пожалуйста номер телефона" },
+                    "feedback[message]" : { required: " Введите, пожалуйста сообщение" },
+                    // "feedback[personal]" : { required: " Необходимо согласится на обработку персональных данных" }
+                },
+                submitHandler: function () {
+                    var IsChecked = $('input[name="agree"]:checked').length > 0;
+                    console.log(IsChecked)
+
+                    if (IsChecked) {
+                        console.log("true")
+	                    // отловить checkbox и сделать проверку
+	                    mainFormButton.attr('disabled', true);
+	                    $.post(feedbackUrl, mainForm.serialize(), function (response) {
+	                        console.log(response)
+	                        notification.fadeIn().text(response.message).css('color', response.color);
+
+	                        if (response.status === 200) {
+	                            mainForm.fadeOut();
+	                        } else {
+	                            mainFormButton.attr('disabled', false);
+	                        }
+	                    });
+                    } else {
+                        console.log("false")
+                        $(".agree").addClass('agree_error');
+
+                    }
+                },
+                errorPlacement: function(error, element) {
+                    var placement = element.data('error');
+
+                    if (placement) {
+                        $(placement).append(error);
+                        $(element).css('border-color', '#ec0000').css('color', '#ec0000');
+                    } else if (placement == 'personal') {
+
+	                } else {
+                        error.insertAfter(element);
+                    }
+                },
+                highlight: function (element) {
+                    $(element).css('border-color', '#ec0000').css('color', '#ec0000');
+                    $(element).addClass('error');
+                },
+                unhighlight: function (element) {
+                    $(element).removeClass('error');
+                    $(element).css('border-color', '#bac2ca').css('color', '#7e868e');
+                }
+            });
+
+
+
+            var consultationForm = $('#consultation_form'), consultationFormButton = $('#consultation_form_button');
+            consultationForm.validate({
+                ignore: ':hidden',
+                rules: {
+                    "feedback[fullName]": { required: true },
+                    "feedback[phone]" : { required: true },
+                    "feedback[message]" : { required: true}
+                },
+                messages: {
+                    "feedback[fullName]": { required: " Введите, пожалуйста имя и фамилию" },
+                    "feedback[phone]" : { required: " Введите, пожалуйста номер телефона" },
+                    "feedback[message]" : { required: " Введите, пожалуйста сообщение" }
+                },
+                submitHandler: function () {
+                    var IsChecked = $('input[name="agree"]:checked').length > 0;
+                    console.log(IsChecked)
+                    if (IsChecked) {
+
+                        console.log("true")
+                        consultationFormButton.attr('disabled', true);
+                        $.post(feedbackUrl, consultationForm.serialize(), function (response) {
+	                        console.log(response)
+	                        notification.fadeIn().text(response.message).css('color', response.color);
+	                        if (response.status === 200) {
+	                            consultationForm.fadeOut();
+	                        } else {
+	                            consultationFormButton.attr('disabled', false);
+	                        }
+	                    });
+                    } else {
+                        console.log("false")
+                        $(".agree").addClass('agree_error');
+
+                    }
+                },
+                errorPlacement: function(error, element) {
+                    var placement = element.data('error');
+                    if (placement) {
+                        $(placement).append(error);
+                        $(element).css('border-color', '#ec0000').css('color', '#ec0000');
+                    } else {
+                        error.insertAfter(element);
+                    }
+                },
+                highlight: function (element) {
+                    $(element).css('border-color', '#ec0000').css('color', '#ec0000');
+                    $(element).addClass('error');
+                },
+                unhighlight: function (element) {
+                    $(element).removeClass('error');
+                    $(element).css('border-color', '#bac2ca').css('color', '#7e868e');
+                }
+            });
+        }
+
+        var _vacancyForm = function () {
+            var vacancyForm = $('#vacancy_form'), vacancyFormButton = $('#vacancy_form_button');
+
+            vacancyForm.submit(function(e) {
+                e.preventDefault();
+                var thisBtn = $(this);
+                var thisForm = thisBtn.closest("form");
+                var formData = new FormData(thisForm[0]);
+	            console.log(formData)
+                var IsChecked = $('input[name="agree"]:checked').length > 0;
+                console.log(IsChecked)
+
+                if (IsChecked) {
+		            $.ajax({
+			            url: vacancyUrl,
+			            type: 'POST',
+			            cache: false,
+			            contentType: false,
+			            processData: false,
+			            data: formData,
+			            dataType: 'json',
+			            beforeSend:function(){
+				            // vacancyFormButton.text('Отправляется......').attr('disabled', true);
+			            },
+			            success: function(response) {
+				            console.log(response)
+				            if (response.status === 200) {
+	                            notification.fadeOut();
+				                  $('#success').text(response.message).css('color', response.color);
+				            } else {
+	                            notification.fadeIn().text(response.message).css('color', response.color);
+	                        }
+	                        vacancyFormButton.attr('disabled', false);
+			            },
+	                    error : function(request) {
+	                        console.log(request.responseText);
+	                        vacancyFormButton.attr('disabled', false);
+	                    },
+		            });
+                } else {
+                    console.log("false")
+                    $(".agree").addClass('agree_error');
+
+                }
+            });
+        }
+
+        return {
+            init: function() {
+                _authenticateForm();
+                _authenticate();
+                _recoveryForm();
+                _logOutForm();
+                _searchForm();
+                _feedbackForm();
+                // _paymentFormSteps();
+                _vacancyForm();
+            }
+        }
+    }();
+
+    // Initialize module
+    // ------------------------------
+    document.addEventListener('DOMContentLoaded', function() {
+        SiteUser.init();
+    });
+
+</script>
+
+
+
+    <script>
+    var UserCabinet = function() {
+
+        const userUrl = "https://ariainsurance.uz/public/user.php";
+        const orderUrl = "https://ariainsurance.uz/public/shop.php";
+
+        var notification = $(".notification");
+
+        var _changeUserInfoForm = function() {
+
+            var changeUserInfoForm = $('#change'), changePassMessage = $("#change_message"), changePassButton = $("#change_button") ;
+            changeUserInfoForm.validate({
+                rules: {
+                    "user[firstName]": { required: true, minlength: 2 },
+                    "user[lastName]": { required: true, minlength: 2 }
+                },
+                messages: {
+                    "user[firstName]": { required: " (Введите, пожалуйста имя)",  minlength: "Слишком коротко!" },
+                    "user[lastName]": { required: " (Введите, пожалуйста фамилию)",  minlength: "Слишком коротко!" }
+                },
+                submitHandler: function () {
+                    changePassButton.attr('disabled', true);
+                    $.post(userUrl, changeUserInfoForm.serialize(), function (response) {
+                        console.log(response);
+                        changePassMessage.fadeIn().text(response.message).css('color', response.color);
+                        if (response.status === 200) {
+                            $('.form-first').css('display', 'none');
+                            changePassButton.attr('disabled', false);
+                            setTimeout(function () {
+                                $('.form-second').fadeIn();
+                            }, 600);
+                        } else {
+                            changePassButton.attr('disabled', false);
+                        }
+                    });
+
+                },
+                errorPlacement: function(error, element) {
+                    var placement = element.data('error');
+                    if (placement) {
+                        $(placement).append(error);
+                        $(element).css('border-color', '#ec0000').css('color', '#ec0000');
+                    } else {
+                        error.insertAfter(element);
+                    }
+                },
+                highlight: function (element) {
+                    $(element).css('border-color', '#ec0000').css('color', '#ec0000');
+                    $(element).addClass('error');
+                },
+                unhighlight: function (element) {
+                    $(element).removeClass('error');
+                    $(element).css('border-color', '#bac2ca').css('color', '#7e868e');
+                }
+            });
+        };
+
+                var _changeUserPhoneForm = function() {
+
+            var changePhoneForm = $('#change_phone'), changeButton = $("#change_phone_button") ;
+            changePhoneForm.validate({
+                rules: {
+                    "user[phone]": { required: true, minlength: 2 },
+                    "user[code]" : {
+                        required: function() {
+                            return $('#action').val() !== 'changeContact';
+                        },
+	                    minlength: 4
+                    },
+                },
+                messages: {
+                    "user[phone]": { required: "Введите, пожалуйста номер телефона",  minlength: "Слишком коротко!" },
+                    "user[code]" : { required: "Введите, пожалуйста код с смс",  minlength: "Слишком коротко!" },
+                },
+                submitHandler: function () {
+                    changeButton.attr('disabled', true);
+                    $.post(userUrl, changePhoneForm.serialize(), function (response) {
+                        console.log(response);
+                        notification.fadeIn().text(response.message).css('color', response.color);
+                        if (response.status === 200) {
+                            if (response.sms === true) {
+                                $('#action').val(response.action);
+								$('#confirm_code').fadeIn();
+                                changeButton.attr('disabled', false).text(response.button);
+                            }
+                            if (response.confirm === true) {
+                                $('#phone').val('');
+                                $('#code').val('');
+                                $('#confirm_code').fadeOut();
+                                changeButton.attr('disabled', false).text(response.button);
+                                setTimeout(function () {
+                                    notification.fadeOut().text('');
+                                }, 2500);
+                            }
+                        } else {
+                            changeButton.attr('disabled', false);
+                        }
+                    });
+
+                },
+	            errorPlacement: function(error, element) {
+                    var placement = element.data('error');
+                    if (placement) {
+                        $(placement).append(error);
+                        $(element).css('border-color', '#ec0000').css('color', '#ec0000');
+                    } else {
+                        error.insertAfter(element);
+                    }
+                },
+                highlight: function (element) {
+                    $(element).css('border-color', '#ec0000').css('color', '#ec0000');
+                    $(element).addClass('error');
+                },
+                unhighlight: function (element) {
+                    $(element).removeClass('error');
+                    $(element).css('border-color', '#bac2ca').css('color', '#7e868e');
+                }
+            });
+        };
+
+                var _changePasswordForm = function() {
+
+            var changePasswordForm = $('#change_pwd'), changePassButton = $("#change_button") ;
+            changePasswordForm.validate({
+                rules: {
+                    "user[oldPassword]": { required: true, minlength: 2 },
+                    "user[newPassword]": { required: true, minlength: 2 },
+                    "user[confirmPassword]": { required: true, minlength: 2}
+                },
+                messages: {
+                    "user[oldPassword]": { required: "Введите, пожалуйста старый пароль", minlength: "Слишком коротко!" },
+                    "user[newPassword]": { required: "Введите, пожалуйста новый пароль", minlength: "Слишком коротко!" },
+                    "user[confirmPassword]": { required: "Введите, пожалуйста новый пароль", minlength: "Слишком коротко!" }
+                },
+                submitHandler: function () {
+                    changePassButton.attr('disabled', true);
+                    $.post(userUrl, changePasswordForm.serialize(), function (response) {
+                        console.log(response);
+                        notification.fadeIn().text(response.message).css('color', response.color);
+                        if (response.status === 200) {
+                            changePassButton.attr('disabled', false);
+	                        // $("#oldPassword").val('');
+	                        // $("#newPassword").val('');
+	                        // $("#confirmPassword").val('');
+                        } else {
+                            changePassButton.attr('disabled', false);
+                        }
+                        setTimeout(function () {
+                            notification.fadeOut().text('');
+                        }, 2500);
+                    });
+
+                },
+                errorPlacement: function(error, element) {
+                    var placement = element.data('error');
+                    if (placement) {
+                        $(placement).append(error);
+                        $(element).css('border-color', '#ec0000').css('color', '#ec0000');
+                    } else {
+                        error.insertAfter(element);
+                    }
+                },
+                highlight: function (element) {
+                    $(element).css('border-color', '#ec0000').css('color', '#ec0000');
+                    $(element).addClass('error');
+                },
+                unhighlight: function (element) {
+                    $(element).removeClass('error');
+                    $(element).css('border-color', '#bac2ca').css('color', '#7e868e');
+                }
+            });
+
+        };
+
+                var _changePassportForm = function() {
+
+            var changePassportForm = $('#passport'), changePassportButton = $("#passport_button") ;
+            changePassportForm.validate({
+                rules: {
+                    "user[pSeries]": { required: true, minlength: 2, maxlength: 2 },
+                    "user[pNumber]": { required: true, minlength: 7, maxlength: 7 },
+                    "user[pinfl]": { required: true, minlength: 14, maxlength: 14}
+                },
+                messages: {
+                    "user[pSeries]": { required: " (Введите, пожалуйста серию паспорта)", minlength: "Слишком коротко!", maxlength: "Слишком длинный!" },
+                    "user[pNumber]": { required: " (Введите, пожалуйста номер паспорта)", minlength: "Слишком коротко!", maxlength: "Слишком длинный!" },
+                    "user[pinfl]": { required: " (Введите, пожалуйста ПИНФЛ)", minlength: "Слишком коротко!", maxlength: "Слишком длинный!" }
+                },
+                submitHandler: function () {
+                    changePassportButton.attr('disabled', true).text('Обрабатывается...');
+                    $.post(userUrl, changePassportForm.serialize(), function (response) {
+                        console.log(response);
+                        notification.fadeIn().text(response.message).css('color', response.color);
+                        if (response.status === 200) {
+                            changePassportButton.attr('disabled', false).text('Ура...');
+                            $("#pSeries").val('');
+                            $("#pNumber").val('');
+                            $("#pinfl").val('');
+                        } else {
+                            changePassportButton.attr('disabled', false).text('Сохранить');
+                        }
+                    });
+
+                },
+                errorPlacement: function(error, element) {
+                    var placement = element.data('error');
+                    if (placement) {
+                        $(placement).append(error);
+                        $(element).css('border-color', '#ec0000').css('color', '#ec0000');
+                    } else {
+                        error.insertAfter(element);
+                    }
+                },
+                highlight: function (element) {
+                    $(element).css('border-color', '#ec0000').css('color', '#ec0000');
+                    $(element).addClass('error');
+                },
+                unhighlight: function (element) {
+                    $(element).removeClass('error');
+                    $(element).css('border-color', '#bac2ca').css('color', '#7e868e');
+                }
+            });
+
+        };
+
+                var _paymentFormPolicy = function () {
+
+            $(".policy_payment_button").on('click', function(e) {
+                var paymentMethod =  $(this).data('payment');
+                var orderId =  $('.personal__modal-pay-input').val();
+                console.log(paymentMethod)
+                console.log(orderId)
+                e.preventDefault();
+                $.ajax({
+                    type: 'POST',
+                    url: orderUrl,
+                    data: { action: "payment_order", "order[payment_method]": paymentMethod, "order[orderId]": orderId },
+                    dataType: 'json',
+                    beforeSend: function() {
+                        console.log('redirection to the payment system')
+                    },
+                    success: function(response) {
+                        console.log(response)
+                        notification.fadeIn().text(response.message).css('color', response.color);
+                        if (response.status === 200) {
+                            $('.fancybox__container').remove();
+                            $('.payment_form').replaceWith('<div class="payment_form">' + response.form + '</div>');
+                            setTimeout(function () {
+                                window.location.reload = '/user/'
+                            }, 5000);
+
+                        }
+                    },
+                    error: function(xhr) {
+                        // orderFormButton.attr('disabled', false)
+                    },
+                    complete: function(response) {
+                        notification.fadeIn().text(response.message).css('color', response.color);
+                        // orderFormButton.attr('disabled', false)
+                    }
+                });
+            });
+        }
+
+        return {
+            init: function() {
+                _changeUserInfoForm();
+                _changeUserPhoneForm();
+                _changePasswordForm();
+                _changePassportForm();
+                _paymentFormPolicy();
+            }
+        }
+    }();
+
+    // Initialize module
+    // ------------------------------
+    document.addEventListener('DOMContentLoaded', function() {
+        UserCabinet.init();
+    });
+
+</script>
+
+</body>
+
+</html>
+
+
+
+
+
